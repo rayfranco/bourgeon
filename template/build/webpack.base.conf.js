@@ -22,6 +22,9 @@ module.exports = {
       {{#if_eq build "runtime"}}
       'vue': 'vue/dist/vue.common.js',
       {{/if_eq}}
+      {{#if svg}}
+      'utils': path.resolve(__dirname, './utils'),
+      {{/if}}
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components')
@@ -62,8 +65,22 @@ module.exports = {
         test: /\.json$/,
         loader: 'json'
       },
+      {{#if svg}}
       {
+        test: /\.svg$/,
+        loader: 'svg-sprite?' + JSON.stringify({
+          name: '[name]_[hash]',
+          spriteModule: 'utils/sprite',
+          prefixize: true
+        })
+      },
+      {{/if}}
+      {
+        {{#if svg}}
+        test: /\.(png|jpe?g|gif)(\?.*)?$/,
+        {{else}}
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        {{/if}}
         loader: 'url',
         query: {
           limit: 10000,

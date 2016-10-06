@@ -40,39 +40,28 @@ module.exports = {
         }
       ]
     },
+    "routing": {
+      "type": "confirm",
+      "message": "Do you need routing?"
+    },
+    "svg": {
+      "type": "confirm",
+      "message": "Do you want support for SVG sprites?"
+    },
     "lint": {
       "type": "confirm",
-      "message": "Use ESLint to lint your code?"
-    },
-    "lintConfig": {
-      "when": "lint",
-      "type": "list",
-      "message": "Pick an ESLint preset",
-      "choices": [
-        {
-          "name": "Standard (https://github.com/feross/standard)",
-          "value": "standard",
-          "short": "Standard"
-        },
-        {
-          "name": "AirBNB (https://github.com/airbnb/javascript)",
-          "value": "airbnb",
-          "short": "AirBNB"
-        },
-        {
-          "name": "none (configure it yourself)",
-          "value": "none",
-          "short": "none"
-        }
-      ]
+      "message": "Use ESLint to lint your code?",
+      "default": true
     },
     "unit": {
       "type": "confirm",
-      "message": "Setup unit tests with Karma + Mocha?"
+      "message": "Setup unit tests with Karma + Mocha?",
+      "default": false
     },
     "e2e": {
       "type": "confirm",
-      "message": "Setup e2e tests with Nightwatch?"
+      "message": "Setup e2e tests with Nightwatch?",
+      "default": false
     }
   },
   "filters": {
@@ -80,7 +69,12 @@ module.exports = {
     ".eslintignore": "lint",
     "config/test.env.js": "unit || e2e",
     "test/unit/**/*": "unit",
-    "test/e2e/**/*": "e2e"
+    "test/e2e/**/*": "e2e",
+    "src/routes.js": "routing",
+    "src/components/Hello.vue": "routing",
+    "build/utils": "svg",
+    "src/assets/svg": "svg",
+    "src/components/Icon.vue": "svg"
   },
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
