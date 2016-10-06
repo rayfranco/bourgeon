@@ -103,7 +103,9 @@ module.exports = {
   },
   {{/lint}}
   vue: {
-    loaders: utils.cssLoaders(),
+    loaders: utils.cssLoaders({
+      paths: 'node_modules'
+    }),
     postcss: [
       require('autoprefixer')({
         browsers: ['last 2 versions']

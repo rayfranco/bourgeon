@@ -25,6 +25,10 @@ export default {
 </script>
 
 <style lang="stylus">
+@import "stylus-media-queries"
+@import "stylus-easing"
+@import "stylus-reset"
+
 html
   height 100%
 

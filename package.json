@@ -6,5 +6,10 @@
   "scripts": {
     "docs": "cd docs && gitbook serve",
     "deploy-docs": "bash ./deploy-docs.sh"
+  },
+  "devDependencies": {
+    "stylus-easing": "^1.0.0",
+    "stylus-media-queries": "^1.0.0",
+    "stylus-reset": "0.0.1"
   }
 }

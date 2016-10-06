@@ -22,7 +22,9 @@ exports.cssLoaders = function (options) {
         loader = loader + '-loader'
         extraParamChar = '?'
       }
-      return loader + (options.sourceMap ? extraParamChar + 'sourceMap' : '')
+      return loader
+        + (options.sourceMap ? extraParamChar + 'sourceMap' : '')
+        + (!!options.paths ? extraParamChar + 'paths=' + options.paths : '')
     }).join('!')
 
     if (options.extract) {
