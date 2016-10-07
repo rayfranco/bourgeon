@@ -18,7 +18,7 @@ import routes from './routes'
 {{/if}}
 // langs
 
-{{#if router}}
+{{#if routing}}
 const router = new VueRouter({
   routes,
   mode: 'history'
