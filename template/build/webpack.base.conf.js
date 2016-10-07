@@ -65,6 +65,12 @@ module.exports = {
         test: /\.json$/,
         loader: 'json'
       },
+      {{#if i18n}}
+      {
+        test: /\.yml$/,
+        loaders: ['json', 'yaml']
+      },
+      {{/if}}
       {{#if svg}}
       {
         test: /\.svg$/,

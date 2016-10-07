@@ -9,14 +9,26 @@ import Icon from './components/Icon.vue'
 {{/if}}
 {{#if routing}}
 import VueRouter from 'vue-router'
+{{/if}}
+{{#if i18n}}
+import i18n from './plugins/i18n'
+{{/if}}
+{{#if routing}}
 import routes from './routes'
+{{/if}}
+// langs
 
+{{#if router}}
 const router = new VueRouter({
   routes,
   mode: 'history'
 })
 
 Vue.use(VueRouter)
+{{/if}}
+{{#if i18n}}
+// List the locales that should be used
+Vue.use(i18n, ['en', 'fr'])
 {{/if}}
 {{#if svg}}
 

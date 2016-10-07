@@ -1,0 +1,5 @@
+messages:
+  welcome: Bienvenue sur votre application Vue.js !
+locales:
+  fr: Français
+  en: Anglais

@@ -40,13 +40,17 @@ module.exports = {
         }
       ]
     },
+    "i18n": {
+      "type": "confirm",
+      "message": "Do you need i18n support?"
+    },
     "routing": {
       "type": "confirm",
       "message": "Do you need routing?"
     },
     "svg": {
       "type": "confirm",
-      "message": "Do you want support for SVG sprites?"
+      "message": "Do you need support for SVG sprites?"
     },
     "lint": {
       "type": "confirm",
