@@ -1,12 +1,16 @@
-# vue-webpack-boilerplate
+![logo](template/src/assets/logo.png?raw=true)
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+# bourgeon
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+> Bourgeon is an opinionated full-featured VueJS 2.0 setup for Webpack
+
+> The setup includes hot-reload, lint-on-save, unit testing, css extraction, advanced routing, i18n, SVG sprite sheets, simple store and stylus with some helpers. Almost everything is optional and you can select what sugars you want on init
+
+> The template is a fork of the original [webpack](https://github.com/vuejs-templates/webpack) template, name and structure is partially inspired by friends from [brindille](https://github.com/brindille/brindille)
 
 ## Documentation
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
+- [For this template](http://rayfranco.github.io/bourgeon): common questions specific to this template are answered and each part is described in greater detail
 - [For Vue 2.0](http://rc.vuejs.org/guide/): general information about how to work with Vue, not specific to this template
 
 ## Usage
@@ -15,7 +19,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init rayfranco/webpack my-project
+$ vue init rayfranco/bourgeon my-project
 $ cd my-project
 $ npm install
 $ npm run dev
