@@ -14,11 +14,11 @@
 
 <script>
 {{#unless routing}}
-import Hello from './components/Hello'
+import Welcome from './components/Welcome'
 
 export default {
   components: {
-    Hello
+    Welcome
   }
 }
 {{/unless}}
