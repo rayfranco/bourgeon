@@ -10,6 +10,12 @@
     {{else}}
     <welcome></welcome>
     {{/if}}
+    {{#if i18n}}
+    <p>
+      <button @click="setLang(lang)" v-for="lang in locales" :disabled="isLang(lang)">\{{ $t('locales.'+ lang) }}</button>
+    </p>
+    {{/if}}
+  </div>
 </template>
 
 <script>
@@ -52,4 +58,20 @@ body
 .logo
   width 70px
   height 100px
+
+button
+  border 0
+  border-radius 4px
+  background #42b983
+  color white
+  padding 5px 10px
+  margin 0 3px
+  cursor pointer
+  &:hover
+    background #35495e
+  &:focus
+    outline none
+  &:disabled
+    background #35495e
+    cursor default
 </style>
