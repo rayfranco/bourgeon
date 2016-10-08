@@ -35,6 +35,8 @@ export default {
 @import "stylus-easing"
 @import "stylus-reset"
 
+reset()
+
 html
   height 100%
 
@@ -43,6 +45,9 @@ body
   align-items center
   justify-content center
   height 100%
+
+p, h1
+  margin 20px 0
 
 #app
   color #2c3e50
