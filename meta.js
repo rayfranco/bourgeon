@@ -74,11 +74,14 @@ module.exports = {
     "config/test.env.js": "unit || e2e",
     "test/unit/**/*": "unit",
     "test/e2e/**/*": "e2e",
-    "src/routes.js": "routing",
-    "src/components/Hello.vue": "routing",
     "build/utils": "svg",
-    "src/assets/svg": "svg",
-    "src/components/Icon.vue": "svg"
+    "src/assets/svg/**/*": "svg",
+    "src/bourgeon/router.js": "routing",
+    "src/bourgeon/Icon.vue": "svg",
+    "src/bourgeon/i18n.js": "i18n",
+    "src/components/Hello.vue": "routing",
+    "src/locales/**/*": "i18n",
+    "src/routes.js": "routing"
   },
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
