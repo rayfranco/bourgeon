@@ -9,7 +9,7 @@ export default {
   props: ['name'],
   computed: {
     xlink () {
-      return require(`../assets/svg/${this.name}.svg`)
+      return require(`assets/svg/${this.name}.svg`)
     }
   }
 }

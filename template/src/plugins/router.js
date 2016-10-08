@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import VueRouter from 'vue-router'
-import routes from '../routes'
+import routes from 'src/routes'
 
 export default {
   router: null,

@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 {{#svg}}
-import Icon from '../components/Icon.vue'
+import Icon from 'components/Icon.vue'
 {{/svg}}
 {{#routing}}
-import Router from './router'
+import Router from 'plugins/router'
 {{/routing}}
 {{#i18n}}
-import I18n from './i18n'
+import I18n from 'plugins/i18n'
 {{/i18n}}
 
 export default {

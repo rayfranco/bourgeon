@@ -17,7 +17,7 @@ export default {
       : Vue.config.fallbackLang
 
     options.forEach(function (lang) {
-      Vue.locale(lang, require(`../locales/${lang}.yml`))
+      Vue.locale(lang, require(`locales/${lang}.yml`))
     })
 
     Vue.mixin({

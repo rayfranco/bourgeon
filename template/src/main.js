@@ -3,8 +3,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'
+import Bourgeon from 'bourgeon'
 import App from './App'
-import Bourgeon from './plugins/bourgeon'
 
 Vue.use(Bourgeon, {
   locales: ['fr', 'en']

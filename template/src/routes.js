@@ -1,5 +1,5 @@
-import WelcomeComponent from './components/Welcome'
-import HelloComponent from './components/Hello'
+import WelcomeComponent from 'components/Welcome'
+import HelloComponent from 'components/Hello'
 
 export default [
   {
