@@ -9,11 +9,18 @@
 │   └── ...
 ├── src/
 │   ├── main.js                 # app entry file
+│   ├── routes.js               # routes definition
+│   ├── store.js                # store file
 │   ├── App.vue                 # main app component
 │   ├── components/             # ui components
 │   │   └── ...
-│   └── assets/                 # module assets (processed by webpack)
-│       └── ...
+│   ├── assets/                 # module assets (processed by webpack)
+│   │   └── svg                 # svg files
+│   │   └── ...
+│   ├── locales/                # locales files in yaml
+│   │   └── ...
+│   └── plugins/                # custom plugins
+│       └── ...
 ├── static/                     # pure static assets (directly copied)
 ├── test/
 │   └── unit/                   # unit tests
