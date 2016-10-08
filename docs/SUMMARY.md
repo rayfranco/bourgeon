@@ -6,6 +6,7 @@
 - [Shared States](store.md)
 - [Internationalization](i18n.md)
 - [Routing](routing.md)
+- [SVG Sprites](svg.md)
 - [Pre-Processors](pre-processors.md)
 - [Handling Static Assets](static.md)
 - [Environment Variables](env.md)
