@@ -1,5 +1,11 @@
 messages:
   welcome: Welcome to your Bourgeon app!
+{{#if routing}}
+  hello: Hello {name}!
+buttons:
+  home: Home
+  hello: Hello
+{{/if}}
 locales:
   fr: French
   en: English

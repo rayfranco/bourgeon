@@ -1,14 +1,23 @@
 <template>
   <div class="hello">
     <h1>\{{ msg }}</h1>
+    <router-link to="/">{{#if i18n}}\{{ $t('buttons.home') }}{{else}}Home{{/if}}</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      msg: 'Hello Vue!'
+  computed: {
+    msg () {
+      {{#if i18n}}
+      return this.$t('messages.hello', { name: this.name })
+      {{else}}
+      return `Hello ${this.name}!`
+      {{/if}}
+    },
+    name () {
+      const name = this.$route.params.name
+      return name.charAt(0).toUpperCase() + name.slice(1)
     }
   }
 }
