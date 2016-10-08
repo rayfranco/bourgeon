@@ -22,7 +22,7 @@ module.exports = {
       {{#if_eq build "runtime"}}
       'vue': 'vue/dist/vue.common.js',
       {{/if_eq}}
-      'bourgeon': path.resolve(__dirname, '../src/plugins/bourgeon.js'),
+      'bourgeon': path.resolve(__dirname, '../src/bourgeon'),
       {{#if svg}}
       'utils': path.resolve(__dirname, './utils'),
       {{/if}}
@@ -31,8 +31,7 @@ module.exports = {
       {{/if}}
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../src/components'),
-      'plugins': path.resolve(__dirname, '../src/plugins')
+      'components': path.resolve(__dirname, '../src/components')
     }
   },
   resolveLoader: {
