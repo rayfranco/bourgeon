@@ -11,9 +11,9 @@
     <welcome></welcome>
     {{/if}}
     {{#if i18n}}
-    <p>
+    <div>
       <button @click="setLang(lang)" v-for="lang in locales" :disabled="isLang(lang)">\{{ $t('locales.'+ lang) }}</button>
-    </p>
+    </div>
     {{/if}}
   </div>
 </template>
@@ -31,52 +31,31 @@ export default {
 </script>
 
 <style lang="stylus">
-@import "stylus-media-queries"
-@import "stylus-easing"
-@import "stylus-reset"
-
-reset()
+@import "typus" // base styles
 
 html
-  height 100%
-
-body
-  display flex
-  align-items center
-  justify-content center
-  height 100%
-
-p, h1
-  margin 20px 0
+  +below(600px) // rupture
+    font-size 50%
 
 #app
-  color #2c3e50
-  margin-top -100px
-  max-width 600px
-  font-family Source Sans Pro, Helvetica, sans-serif
+  align() // jeet
   text-align center
 
-  a
-    color #42b983
-    text-decoration none
-
-.logo
-  width 70px
-  height 100px
+a
+  color green // custom variable
 
 button
   border 0
-  border-radius 4px
-  background #42b983
+  background green
   color white
-  padding 5px 10px
-  margin 0 3px
   cursor pointer
+  margin 0 5px
+  &:disabled,
   &:hover
-    background #35495e
-  &:focus
-    outline none
+    background blue
   &:disabled
-    background #35495e
     cursor default
+
+.icon-logo
+  margin-bottom 2.5rem
 </style>

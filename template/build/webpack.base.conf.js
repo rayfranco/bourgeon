@@ -121,5 +121,14 @@ module.exports = {
         browsers: ['last 2 versions']
       })
     ]
+  },
+  stylus: {
+    use: [
+      require('jeet')(),
+      require('rupture')()
+    ],
+    import: [
+      path.resolve(__dirname, '../src/styles/index.styl')
+    ]
   }
 }

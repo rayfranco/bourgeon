@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>\{{ msg }}</h1>
-    <router-link to="/">{{#if i18n}}\{{ $t('buttons.home') }}{{else}}Home{{/if}}</router-link>
+    <p>
+      <router-link to="/">{{#if i18n}}\{{ $t('buttons.home') }}{{else}}Home{{/if}}</router-link>
+    </p>
   </div>
 </template>
 
@@ -26,5 +28,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
 h1
-  color #42b983
+  color green
 </style>
