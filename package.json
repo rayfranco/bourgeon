@@ -1,6 +1,6 @@
 {
   "name": "bourgeon",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "license": "MIT",
   "description": "Bourgeon is an opinionated-featured VueJS 2.0 setup for Webpack",
   "scripts": {
