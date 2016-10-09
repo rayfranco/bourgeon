@@ -2,11 +2,19 @@
 
 # bourgeon
 
-> Bourgeon is an opinionated full-featured VueJS 2.0 setup for Webpack
+> Bourgeon is an opinionated-featured VueJS 2.0 setup for Webpack
 
-> The setup includes hot-reload, lint-on-save, unit testing, css extraction, advanced routing, i18n, SVG sprite sheets, simple store and stylus with some helpers. Almost everything is optional and you can select what sugars you want on init
+> The setup includes hot-reload, lint-on-save, unit testing, css extraction, advanced routing, i18n, SVG sprite sheets, a simple store and stylus with some helpers. Almost everything is optional and you can select which sugars you want on init
 
-> The template is a fork of the original [webpack](https://github.com/vuejs-templates/webpack) template, name and structure is partially inspired by friends from [brindille](https://github.com/brindille/brindille)
+## What's different
+
+This template is a fork of the official [webpack](https://github.com/vuejs-templates/webpack) template. A few more opinionated features and conventions are bundled with Bourgeon:
+
+- **[Routing](routing.md)** using official [vue-router](https://github.com/vuejs/vue-router) and conventions
+- **[i18n](i18n.md)** using [vue-i18n](https://github.com/kazupon/vue-i18n), [yaml-loader](https://github.com/okonet/yaml-loader) and conventions
+- **[Store](store.md)** simple convention for sharing data between components
+- **[SVG Sprites](svg.md)** using [svg-sprite-loader](https://github.com/kisenka/svg-sprite-loader) and conventions
+- **[Stylus](stylus.md)** using [stylus-loader](https://github.com/shama/stylus-loader) and some custom mixins
 
 ## Documentation
 

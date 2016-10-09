@@ -1,15 +1,10 @@
 {
   "name": "bourgeon",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "license": "MIT",
-  "description": "Bourgeon is an opinionated full-featured VueJS 2.0 setup for Webpack",
+  "description": "Bourgeon is an opinionated-featured VueJS 2.0 setup for Webpack",
   "scripts": {
     "docs": "cd docs && gitbook serve",
     "deploy-docs": "bash ./deploy-docs.sh"
-  },
-  "devDependencies": {
-    "stylus-easing": "^1.0.0",
-    "stylus-media-queries": "^1.0.0",
-    "stylus-reset": "0.0.1"
   }
 }
