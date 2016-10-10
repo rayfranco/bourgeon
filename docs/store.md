@@ -1,7 +1,16 @@
 # Shared States
 
-You can share states and reactive data between components by using the store.
-Unlike the store in VueX, it is simply an object literal. It is free to use in every component, you will just need to import it. To make it reactive, you should write to the `store` import and read from the `data` (here `state` is used)
+You can share states between components using [vuex](https://github.com/vuejs/vuex) or a simple store (object literal). In both configurations, you will find the store (instance of `Vuex.Store` or `{}`) in `src/store.js`.
+
+## Using Vuex
+
+You will find a basic counter example in the `src/store.js`. Refer to the official [documentation](http://vuex.vuejs.org/en/index.html) for more informations.
+
+## Using Object Literal
+
+If you think Vuex is an overkill for your project, you can keep it simple and share your states by storing reactive data into the store.
+
+> **Note:** you should read from `this.state` but write to the `store` object. See example below.
 
 ```javascript
 import store from "store"

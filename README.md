@@ -10,11 +10,12 @@
 
 This template is a fork of the official [webpack](https://github.com/vuejs-templates/webpack) template. A few more opinionated features and conventions are bundled with Bourgeon:
 
-- **[Routing](routing.md)** using official [vue-router](https://github.com/vuejs/vue-router) and conventions
-- **[i18n](i18n.md)** using [vue-i18n](https://github.com/kazupon/vue-i18n), [yaml-loader](https://github.com/okonet/yaml-loader) and conventions
-- **[Store](store.md)** simple convention for sharing data between components
-- **[SVG Sprites](svg.md)** using [svg-sprite-loader](https://github.com/kisenka/svg-sprite-loader) and conventions
-- **[Stylus](stylus.md)** using [stylus-loader](https://github.com/shama/stylus-loader) and some custom mixins
+- **[VueX](https://rayfranco.github.io/bourgeon/store.html)** installed and ready to use
+- **[Routing](https://rayfranco.github.io/bourgeon/routing.html)** using official [vue-router](https://github.com/vuejs/vue-router) and conventions
+- **[i18n](https://rayfranco.github.io/bourgeon/i18n.html)** using [vue-i18n](https://github.com/kazupon/vue-i18n), [yaml-loader](https://github.com/okonet/yaml-loader) and conventions
+- **[Store](https://rayfranco.github.io/bourgeon/store.html)** if not using vuex, a simple convention for sharing data between components
+- **[SVG Sprites](https://rayfranco.github.io/bourgeon/svg.html)** using [svg-sprite-loader](https://github.com/kisenka/svg-sprite-loader) and conventions
+- **[Stylus](https://rayfranco.github.io/bourgeon/stylus.html)** using [stylus-loader](https://github.com/shama/stylus-loader) and some custom mixins
 
 ## Documentation
 
