@@ -2,6 +2,9 @@ messages:
   welcome: Welcome to your Bourgeon app!
 {{#if routing}}
   hello: Hello {name}!
+  {{#if vuex}}
+  counter: You clicked this button {n} time | You clicked this button {n} times
+  {{/if}}
 buttons:
   home: Home
   hello: Hello

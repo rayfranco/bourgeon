@@ -40,6 +40,10 @@ module.exports = {
         }
       ]
     },
+    "vuex": {
+      "type": "confirm",
+      "message": "Do you need Vuex?"
+    },
     "i18n": {
       "type": "confirm",
       "message": "Do you need i18n support?"

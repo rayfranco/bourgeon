@@ -1,5 +1,8 @@
 messages:
   welcome: Bienvenue sur votre application Bourgeon !
+  {{#if vuex}}
+  counter: Vous avez cliqué ce bouton {n} fois
+  {{/if}}
 {{#if routing}}
   hello: Bonjour {name} !
 buttons:
