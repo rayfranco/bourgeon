@@ -77,7 +77,7 @@ module.exports = {
       {{/if}}
       {{#if svg}}
       {
-        test: /\.svg$/,
+        test: /\.svg(\?.*)?$/,
         loader: 'svg-sprite?' + JSON.stringify({
           name: '[name]_[hash]',
           spriteModule: 'utils/sprite',
