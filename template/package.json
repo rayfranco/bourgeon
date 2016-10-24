@@ -49,6 +49,7 @@
     "function-bind": "^1.0.2",
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.17.2",
+    "ify-loader": "^1.0.3",
     "json-loader": "^0.5.4",
     {{#unit}}
     "karma": "^1.3.0",

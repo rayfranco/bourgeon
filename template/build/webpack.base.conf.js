@@ -66,6 +66,10 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /node_modules/,
+        loader: 'ify'
+      },
+      {
         test: /\.json$/,
         loader: 'json'
       },
