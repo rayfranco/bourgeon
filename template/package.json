@@ -80,7 +80,13 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",
     "rupture": "^0.6.1",
+    {{#if_eq grid "jeet"}}
     "jeet": "^6.1.5",
+    {{/if_eq}}
+    {{#if_eq grid "lost"}}
+    "poststylus": "^0.2.3",
+    "lost": "^7.1.1",
+    {{/if_eq}}
     "typus": "^0.0.3",
     {{#svg}}
     "svg-sprite-loader": "0.0.29",

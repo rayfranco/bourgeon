@@ -56,6 +56,22 @@ module.exports = {
       "type": "confirm",
       "message": "Do you need support for SVG sprites?"
     },
+    "grid": {
+      "type": "list",
+      "message": "Which grid system would you like?",
+      "choices": [
+        {
+          "name": "Jeet",
+          "value": "jeet",
+          "short": "jeet"
+        },
+        {
+          "name": "LostGrid",
+          "value": "lost",
+          "short": "lost"
+        }
+      ]
+    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?",
