@@ -57,7 +57,8 @@ export default {
 </script>
 
 <style lang="stylus">
-@import "typus" // base styles
+@import "../node_modules/typus" // base styles
+@import "styles/theme"
 
 html
   {{#if_eq grid "lost"}}
@@ -72,23 +73,6 @@ html
   align() // jeet
   {{/if_eq}}
   text-align center
-
-a
-  color green // custom variable
-
-button,
-button:active,
-button:focus
-  border 0
-  background green
-  color white
-  cursor pointer
-  margin 0 5px
-  &:disabled,
-  &:hover
-    background blue
-  &:disabled
-    cursor default
 
 .icon-logo
   margin-bottom 2.5rem
