@@ -32,7 +32,7 @@
     "babel-preset-stage-2": "^6.0.0",
     "babel-register": "^6.0.0",
     "connect-history-api-fallback": "^1.1.0",
-    "css-loader": "^0.25.0",
+    "css-loader": "^0.27.3",
     {{#lint}}
     "eslint": "^3.6.1",
     "eslint-friendly-formatter": "^2.0.5",
@@ -78,9 +78,9 @@
     "ora": "^0.3.0",
     "shelljs": "^0.7.4",
     "stylus": "^0.54.5",
-    "stylus-loader": "^2.3.1",
+    "stylus-loader": "^3.0.1",
     "rupture": "^0.6.1",
-    "jeet": "^6.1.5",
+    "jeet": "^7.0.1",
     "typus": "^0.0.3",
     {{#svg}}
     "svg-sprite-loader": "0.0.29",
