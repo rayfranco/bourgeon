@@ -61,11 +61,17 @@ export default {
 @import "styles/theme"
 
 html
+  {{#if_eq grid "lost"}}
+  lost-align middle-center // lostgrid
+  height 100%
+  {{/if_eq}}
   +below(600px) // rupture
     font-size 50%
 
 #app
+  {{#if_eq grid "jeet"}}
   align() // jeet
+  {{/if_eq}}
   text-align center
 
 .icon-logo
