@@ -1,3 +1,5 @@
+## Note: Since `vue-cli` v3.0 is out in beta, there is no interest in keeping this repository alive, since all of `bourgeon` setup is now available natively. Therefore, this repository will be deprecated when `vue-cli` v3.0 is officially released. Until then, it will only be maintained.
+
 ![logo](template/src/assets/logo.png?raw=true)
 
 # bourgeon
